@@ -45,6 +45,7 @@ function resize()
 	canvasOne.width = document.documentElement.clientWidth*0.9;
 	canvasOne.height = document.documentElement.clientHeight*0.9;
 	gl.viewport(0,0,canvasOne.width,canvasOne.height);
+	scene.resize();
 	// console.log(document.documentElement.clientWidth,document.documentElement.clientHeight);
 }
 

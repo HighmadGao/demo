@@ -19,6 +19,11 @@ Scene.prototype.init = function()
 	this.addElement(this.defaultFlat);
 }
 
+Scene.prototype.resize = function()
+{
+	this.camera.resize();
+}
+
 Scene.prototype.uploadCameraAndLight = function()
 {
 	var u_ProjMatrix = gl.getUniformLocation(gl.program,"u_ProjMatrix");

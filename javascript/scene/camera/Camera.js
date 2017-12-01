@@ -20,7 +20,7 @@ Camera.prototype.init = function()
 
 Camera.prototype.resize = function()
 {
-	// this.projMatrix.setPerspective(30,canvasOne.width/canvasOne.height,1,10000);
+	this.projMatrix.setPerspective(30,canvasOne.width/canvasOne.height,1,1000);
 }
 
 Camera.prototype.updateMatrix = function()
