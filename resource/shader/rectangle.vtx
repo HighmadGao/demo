@@ -1,0 +1,15 @@
+attribute vec4 a_Position;
+attribute vec4 a_Normal;
+uniform vec3 u_Scale;
+uniform mat4 u_ProjMatrix;
+uniform mat4 u_ViewMatrix;
+uniform mat4 u_ModelMatrix;
+uniform mat4 u_NormalMatrix;
+varying vec3 v_Position;
+varying vec3 v_Normal;
+void main(){
+	vec4 temp_Position = vec4(a_Position.xyz*u_Scale,a_Position.w);
+	gl_Position = u_ProjMatrix*u_ViewMatrix*u_ModelMatrix*temp_Position;
+	v_Position = vec3(u_ModelMatrix*temp_Position);
+	v_Normal = normalize(vec3(u_NormalMatrix*a_Normal));
+}
