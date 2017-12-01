@@ -10,7 +10,7 @@ function ShaderCompiler()
 	this.vertexShaderStrList = [];
 	this.fragmentShaderList = [];
 	this.fragmentShaderStrList = [];
-	this.shaderPath = "http://localhost/html/webGl/3DScene/resource/shader/";
+	this.shaderPath = resourcePath+"shader/";
 	this.currentProgram = null;
 }
 
