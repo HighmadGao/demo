@@ -1,4 +1,4 @@
-var resourcePath = "http://localhost/html/webGl/demo/resource/";
+var resourcePath = "https://highmadgao.github.io/demo/resource/";
 var shaderCompiler;
 var canvasOne;
 var gl;
